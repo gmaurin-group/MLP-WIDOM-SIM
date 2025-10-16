@@ -1,0 +1,1889 @@
+{
+  "paths": [
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/LICENSE.txt",
+      "path_type": "hardlink",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "size_in_bytes": 35147
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "eced05801bfc994184be4d469f32f017d1d87f172080706aa12550b8b3eccb22",
+      "size_in_bytes": 771
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "a7e7e596214ab76243cd0821eef9dcbc61f2a35f57b1970320ae7143f1340d15",
+      "size_in_bytes": 23550
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "c9cb3b1b187ee9b6055ca217a47ef13f7a4db4dd5bb47f9b3460e646f67c8c6d",
+      "size_in_bytes": 103
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "765a63abdd12acb440d9d1bd007c4e710015b33f097dd35fbaee9e28ead8dd45",
+      "size_in_bytes": 102
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod-1.4.8.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "061f5b995f6fec86b693345246aa1781fe5cf2abf65ac7956bdf84f6f9f99f8a",
+      "size_in_bytes": 7
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "0b30d20ecd3cbf1ed6e173ab3cc58cb136caea18737f19b00436c5586a97f6f9",
+      "size_in_bytes": 2968
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "69f2548c95e5f5997f11e168995a0df4ec3a1da768af0869fcbe7cf8bd01bf71",
+      "size_in_bytes": 2129
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/binning.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "439b84448c100b2f2178f5c0d633eedaa7b9a0ba0623fbd9cb68ab85f566bed2",
+      "size_in_bytes": 9534
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/bonds.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "078b52a1977f2077bd51af04700cba728e6314159e434f95429c5ae76523b5f0",
+      "size_in_bytes": 6030
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/clusters.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1345961fce7a18e4d4d8c89b4b2e70456fc8ff96758c25e0e70db2b8d5f38553",
+      "size_in_bytes": 4146
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/constants.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "71733b626859fc399513ed4528880d3c85b064abf37f6bd4f01e645863ed2f5b",
+      "size_in_bytes": 677
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/graphs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8fe8ca447130718916fcc1ad6091dfaba413b24c08875c948cf1c15d2ea9afee",
+      "size_in_bytes": 54648
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/ic.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "7199a79964f184df9226fdad00a967ac2af08f17298034fca04554ffa2f0e95e",
+      "size_in_bytes": 22875
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/isotopes.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d323cc3180dc99878bd19b765d0138a4ac73678c74f4880367506b3c9d9d1926",
+      "size_in_bytes": 5157
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/log.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c4f3d8266f345567e0daeccf455e64ef724d9b0d73f4bb32864811b118b66f26",
+      "size_in_bytes": 14990
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/minimizer.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5298746645c6bdb162bf068cf9db0992f36c8c55f7f494f5dc6839e5a97c406e",
+      "size_in_bytes": 57726
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/molecular_graphs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "8144c100a3840282552687ab07e4f46a934a9ae2b7e8eda2da63174ae9d30306",
+      "size_in_bytes": 21345
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/molecules.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e4d8583cd2d07794cac73623a408bc1d5f9bf9e72d431e9bd606059fd8e397d9",
+      "size_in_bytes": 10975
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/pairff.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5838e2fea1053528154b3d98943fa3d3b49e8478d6405f6d6b5d8b65e832a92d",
+      "size_in_bytes": 14905
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/periodic.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "80e372d3610bf7becbfd0d622558e7cc88778d43446683b5db084b764f7bd661",
+      "size_in_bytes": 4262
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/quaternions.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "fd4582bb9266b14769d223ce75ad80795fd898bfc43e1e5f978093fe5391f217",
+      "size_in_bytes": 2897
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/randomize.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c934e0537005834a812365fb5006e6d3b7103de75fc4147a835d1a66fbcc867b",
+      "size_in_bytes": 14625
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/similarity.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cb70a84de3b90598679ffcbd82dce92ffae4c85b4ac2a06a90bda593eabb9a75",
+      "size_in_bytes": 4765
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/symmetry.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "86bc0d497deda16c4aeca662b0159c91ba560b0c9dbed9ae38a975d4f2ff029c",
+      "size_in_bytes": 1237
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/toyff.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d0bd35d537d7d3ac25d73f4aaf1540a4a4ce5a55d522b97eacaaaa74302871a5",
+      "size_in_bytes": 8932
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/transformations.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "38bbb2796c314ad7eee4169e91ab32a86d522e4b18b0c548b50446ff6d782e47",
+      "size_in_bytes": 17549
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/unit_cells.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f65ff7385ec92aa9cb234378a38e36bbe4c98cfbaa204e74bbc76848bd403070",
+      "size_in_bytes": 12969
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/units.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0e407662a6a3f348e397e024c7eb3c415b633f2c2430b0d1aee31fe389301a73",
+      "size_in_bytes": 4048
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "9c894df03569226da489fc04a4bd62833a111abccf4ca32dea598cd670de00cd",
+      "size_in_bytes": 9989
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/vectors.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "07b7f92373a1ed67bceedca3a2dd94c29845b3e50eff8765703269afcba8dff3",
+      "size_in_bytes": 2325
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/version.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "06fdfbebded418bcb2f3fc85c0c87372fd36fd25706328f5e21a5581a28760fb",
+      "size_in_bytes": 264
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/__pycache__/zmatrix.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "24e376e3d515e487a2428158328e90c01b9af52a8a7b137d244113cf6d70adc9",
+      "size_in_bytes": 4584
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/binning.py",
+      "path_type": "hardlink",
+      "sha256": "faa305db1d8b6a38f4d7d1dff1994373ab18347c917f6e396b1aac27080493f1",
+      "size_in_bytes": 11789
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/bonds.py",
+      "path_type": "hardlink",
+      "sha256": "f31a2cb13065ac0004e178bf390205efc58e843e4aeac6611829fb139e27ee31",
+      "size_in_bytes": 7348
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/clusters.py",
+      "path_type": "hardlink",
+      "sha256": "4a7e147abed459777e717c52a48e81f01ef296cd3823545995818e264f77b909",
+      "size_in_bytes": 5235
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/common.c",
+      "path_type": "hardlink",
+      "sha256": "2e81f04c3cfebe19e72167f69e464f5ec988a46750a29ef0e015ca4ce40cd3f9",
+      "size_in_bytes": 3743
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/common.h",
+      "path_type": "hardlink",
+      "sha256": "faf547e2bd43c8e0412257b8b84d4375b725131a7daa7219a5439ad92ea6a2f7",
+      "size_in_bytes": 1590
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/constants.py",
+      "path_type": "hardlink",
+      "sha256": "4ec56567745f835a1c6166e9c69ff6e326fd39e7c5d3889ec376e81bcba8621d",
+      "size_in_bytes": 1646
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/bonds.csv",
+      "path_type": "hardlink",
+      "sha256": "ef148418fe586a750aefb322023bf08d6077a0c364a765aa5cdc31e9156157f3",
+      "size_in_bytes": 3555
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/bonds.ods",
+      "path_type": "hardlink",
+      "sha256": "bac29e06018f04a0b0ca0bd6101f37df3d0ae733e4f35b3d0822b7a429e8ecb2",
+      "size_in_bytes": 14724
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/mass.mas03",
+      "path_type": "hardlink",
+      "sha256": "33405560376f2adfb190beec44213523ec79149804df94e436d608019a4c70d1",
+      "size_in_bytes": 387460
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/nubtab03.asc",
+      "path_type": "hardlink",
+      "sha256": "eeae80ae3b9ad1beef4ebf7e0b350688e9d483ba55fdaee55ecf9323941d8a33",
+      "size_in_bytes": 516993
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/periodic.csv",
+      "path_type": "hardlink",
+      "sha256": "d0f986302a1f1b2ae670aabb3755b2db194995c2d57a05ed32b05602a080bce2",
+      "size_in_bytes": 7327
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/periodic.ods",
+      "path_type": "hardlink",
+      "sha256": "d98772a29003314a4db3825d76fb3f89ad9db500c5f4bb3164ad43f2b553e5ed",
+      "size_in_bytes": 26137
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/1LJL_Cys10.cml",
+      "path_type": "hardlink",
+      "sha256": "c4b8188325382ec1a9c89b43461447b3d32a3702d38a90a446f40c603240a76b",
+      "size_in_bytes": 38198
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/1TOH.b3lyp.fchk",
+      "path_type": "hardlink",
+      "sha256": "8058289e2badfa7846e2b36d07515ff0319a3428120b6b701c45f1eeb31fa148",
+      "size_in_bytes": 532176
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/1TOH.b3lyp.trim.fchk",
+      "path_type": "hardlink",
+      "sha256": "29a3c7bd3d1cccc30acd5419c324c14ef2e31749597407bbd12c9034ddfb9417",
+      "size_in_bytes": 3657
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/5ringOH.xyz",
+      "path_type": "hardlink",
+      "sha256": "dce6cde31a1c7869fd2c96650c66ccfa20172f1ab32b20128479195eb27f1cd7",
+      "size_in_bytes": 1387
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/CID_22898828.sdf",
+      "path_type": "hardlink",
+      "sha256": "92896cddf97d182e9f0e4fd0ff00b6ec8135d1b699451a99b35138a161504537",
+      "size_in_bytes": 2918
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/PCGamess_PUNCH",
+      "path_type": "hardlink",
+      "sha256": "b8fb245da51fe92cae597dd07f57a902615b07f569c6bc14653a19a82627c363",
+      "size_in_bytes": 902283
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_31646545.sdf",
+      "path_type": "hardlink",
+      "sha256": "cdfed41738f85ec7bc9338a3f8223261e5f8d816dcb8f60b2e98afb8332c9c69",
+      "size_in_bytes": 3404
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_31646548.sdf",
+      "path_type": "hardlink",
+      "sha256": "d571f9b2c5331b89011a607263690718fa04c195cef1a095057b3e056bc25679",
+      "size_in_bytes": 3754
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_40363570.sdf",
+      "path_type": "hardlink",
+      "sha256": "f1e531b808f159267298c2c349a9d4417d2be0a5d94d2494cb197cb6294a85db",
+      "size_in_bytes": 4253
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_40363571.sdf",
+      "path_type": "hardlink",
+      "sha256": "a2e8934916a804044c3221e0f1d8f771621c4654b4b6658b706ed5fbaed93ba9",
+      "size_in_bytes": 4181
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_41893278.sdf",
+      "path_type": "hardlink",
+      "sha256": "59b082c6a60b0e0a7df7950446601ab3fd91406853ccae2cb25672671e0e0f8a",
+      "size_in_bytes": 3956
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_41893280.sdf",
+      "path_type": "hardlink",
+      "sha256": "c66fb4af4d8c1891bcb7e1352dd2e476f59787471d53be7467760f3d99ad01d0",
+      "size_in_bytes": 3962
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_54258192.sdf",
+      "path_type": "hardlink",
+      "sha256": "187cd8f29059e3ae67d2d3221e0a5c01126c9ac0a64516562abf16db3e5d5b20",
+      "size_in_bytes": 2813
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_55127927.sdf",
+      "path_type": "hardlink",
+      "sha256": "f8c81b439f77fce7faf4b230fdc59c5aee11f341747964d3f7fabc2f858b3248",
+      "size_in_bytes": 3603
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_55488598.sdf",
+      "path_type": "hardlink",
+      "sha256": "07603390d5a919cbcb4d3719b75b6cb8086a80748ebb04977112f47b250da81a",
+      "size_in_bytes": 2815
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/SID_56274343.sdf",
+      "path_type": "hardlink",
+      "sha256": "9d0d8f7387bb27ebf9f3fe518e5c270008bc5e6727414b81bc3c7c6d96733022",
+      "size_in_bytes": 3649
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/TRAJECTORY_H2_CPMD",
+      "path_type": "hardlink",
+      "sha256": "61661f6ec4b4fc19ee40b357f9b54a530f42ce2bdd1fb96a17cdc440c6befb2e",
+      "size_in_bytes": 3040
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/alanine.cube",
+      "path_type": "hardlink",
+      "sha256": "d0751959316c889dee0386a672e7b3be6a3526925ee3f386761447e78772a214",
+      "size_in_bytes": 14038
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/argon.xyz",
+      "path_type": "hardlink",
+      "sha256": "1160d5dd0efd0a2b7e54f4af4ff44f6d28f2303359a95ef269819b00ddbb23ea",
+      "size_in_bytes": 50
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/bartek.atrj",
+      "path_type": "hardlink",
+      "sha256": "04912f703fcde390e59ca69b2088345555523c88c553f61ef98b2a24b795091c",
+      "size_in_bytes": 339095
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/benzene.xyz",
+      "path_type": "hardlink",
+      "sha256": "cdcac34244144f40a80eeb3e9c37ccc2e9e56c9723236537e98749a014995dd1",
+      "size_in_bytes": 531
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/butane.xyz",
+      "path_type": "hardlink",
+      "sha256": "f59becbbef56a0e2d20a1ffc4022d3e63cd2870f2292b1d7309c22e3f1c28432",
+      "size_in_bytes": 601
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/caplayer.cml",
+      "path_type": "hardlink",
+      "sha256": "1c5819cfc5149caf14cf66c6a30a777501e1f032ab8ead70d7a0655df0f7d868",
+      "size_in_bytes": 10836
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/crystal_api.out",
+      "path_type": "hardlink",
+      "sha256": "bea92181df45d0071b1bf44750f1ea3e1f0f1cbe789466e4dccf96d609c7d2d0",
+      "size_in_bytes": 449006
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/cyclopentane.xyz",
+      "path_type": "hardlink",
+      "sha256": "be70695141d20af65b65f06ffae131ecf79ce349987398683b118f3c3ba43f91",
+      "size_in_bytes": 561
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/dinitrogen.xyz",
+      "path_type": "hardlink",
+      "sha256": "54803396f84be7e8cc1f62a07a0cb414c288d853254f05dc31c14c6265362fed",
+      "size_in_bytes": 92
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/dlpoly_HISTORY",
+      "path_type": "hardlink",
+      "sha256": "3a5385a5d3ba4c2368e0e76123da525f4a4e3caf8cbee406921c5d33a8c0ecc2",
+      "size_in_bytes": 1989
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/dlpoly_HISTORY_an2",
+      "path_type": "hardlink",
+      "sha256": "fed55e96b7be47bb1b76769b3fbb26b3139465074a2f034f0ce1da65358beae5",
+      "size_in_bytes": 4184
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/dlpoly_OUTPUT",
+      "path_type": "hardlink",
+      "sha256": "d95714db095419a3f83bf0474825fa76a143f8467f98f7566973a90ea824c567",
+      "size_in_bytes": 38020
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/dopamine.xyz",
+      "path_type": "hardlink",
+      "sha256": "4f0c83f6c8c164dc9af38542f3f2c8a0cd2f32b03bb48c06991f43950d11368a",
+      "size_in_bytes": 686
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/ethane.xyz",
+      "path_type": "hardlink",
+      "sha256": "8142ae0ca43b6417c44380a960a89587f808d8712a3ff33f923ab04cc7a1245b",
+      "size_in_bytes": 389
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/ethene.xyz",
+      "path_type": "hardlink",
+      "sha256": "c6d0d4421b77f68222588b4bb2d8704172022e585c3bfa8d44e97c71321929aa",
+      "size_in_bytes": 187
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/ethene_ethyl_trans.xyz",
+      "path_type": "hardlink",
+      "sha256": "2cc009350aa55e30905766df26869af506927211542d5239a49dcd32eb2f9053",
+      "size_in_bytes": 649
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/example.sdf",
+      "path_type": "hardlink",
+      "sha256": "46e7450a387f6cde8d1a67191d6581dfeacf452ddb49715d35bebeab89ee3860",
+      "size_in_bytes": 6435
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/formol.xyz",
+      "path_type": "hardlink",
+      "sha256": "8c55158c5fd6480da5de75ec1c88f60e0e82a139c08d26b5d6d9d00831aeb427",
+      "size_in_bytes": 213
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/funny.xyz",
+      "path_type": "hardlink",
+      "sha256": "7f56077674cc63b601950012cce8b1932f69c72eea21806a9cf6041054e8c4e2",
+      "size_in_bytes": 1146
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/h3zrosihohosioh3.xyz",
+      "path_type": "hardlink",
+      "sha256": "9b2957ae634fa3662cfecada42630ea90adae4a10212300b702610585f7912cd",
+      "size_in_bytes": 853
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/il2.pdb",
+      "path_type": "hardlink",
+      "sha256": "835670adcab37d43eb7794a95063fa3ee73982fbf10ca7a0929aefde927f8a55",
+      "size_in_bytes": 168966
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/lammps_dump.txt",
+      "path_type": "hardlink",
+      "sha256": "d24120c62bb94500d22b5c4a37a1fc38094bf1988a0afcfa32327dfe08ecdaf4",
+      "size_in_bytes": 12434
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/lau.xyz",
+      "path_type": "hardlink",
+      "sha256": "0e26d5c1d2281c996a0e2e4cc660b25868a84683bb9e9677b7949dd8a3abd907",
+      "size_in_bytes": 3106
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/octane.xyz",
+      "path_type": "hardlink",
+      "sha256": "cd8ad9eafc30516ec3470fce9d6cdb49399fc31095df505d2985a19ac359fe4c",
+      "size_in_bytes": 1105
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/oh3siozroh3.xyz",
+      "path_type": "hardlink",
+      "sha256": "78f92e8a8727299c0696eda6f31ab52c6dd723998b957b2a07567cb998ef7f5d",
+      "size_in_bytes": 750
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/opt_5ring10T.xyz",
+      "path_type": "hardlink",
+      "sha256": "6cf52c9d909d9860f57c99b23e419ce9625591b844fda4cbcedd5f3dae974067",
+      "size_in_bytes": 3559
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/opt_5ring12T.xyz",
+      "path_type": "hardlink",
+      "sha256": "982781c9f738442d38b6bbe33b596ea77a00013e6f4515f4cb2179cf739b405c",
+      "size_in_bytes": 3949
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/opt_6_6ring.xyz",
+      "path_type": "hardlink",
+      "sha256": "dc0973c466c520ae571c19dffdc58a69a225242ff4e7c14d52b4996244b0e710",
+      "size_in_bytes": 3754
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/opt_6ring.xyz",
+      "path_type": "hardlink",
+      "sha256": "aad268fa14dbe696d4158147cb180c41fedc1944563e92111ca49b568d0cbc30",
+      "size_in_bytes": 2389
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/osih2osihosih2osih2ozrh2oh.xyz",
+      "path_type": "hardlink",
+      "sha256": "42cfb0e347664a27edaf53a91a49bb0c35ea9d372a62518da33333d516ad38ba",
+      "size_in_bytes": 1059
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/pentapeptide.psf",
+      "path_type": "hardlink",
+      "sha256": "e1046fc76fceb07a77adb06ac560b1feda489d8c15d136f3441c6f33bb821bb5",
+      "size_in_bytes": 10483
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/precursor.xyz",
+      "path_type": "hardlink",
+      "sha256": "c7a9de1e5d4f7eb79fa342ccce53413198e1b6ed977af7a931a1987341d48e25",
+      "size_in_bytes": 6696
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/probes.xyz",
+      "path_type": "hardlink",
+      "sha256": "7b45e5be9bb3c566d4c18dd4d4e22aec1273a410fa83d913d7b798ebf86ddee7",
+      "size_in_bytes": 1589
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/tea.xyz",
+      "path_type": "hardlink",
+      "sha256": "8ec9064bdf586c32c15b0446aad983a8c3310369992545fc9225622e6e25c5a0",
+      "size_in_bytes": 1257
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/tetra.xyz",
+      "path_type": "hardlink",
+      "sha256": "ac0b6d82ee0ee0bb79fee36130708862a51cd47d2ae8e25c588761bc0d97e25b",
+      "size_in_bytes": 221
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/thf.psf",
+      "path_type": "hardlink",
+      "sha256": "9c023fb61d0e8b4ad44228ad348befcb74c28d3f9f1ace9284b245945fd99acd",
+      "size_in_bytes": 150222
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/thf.xyz",
+      "path_type": "hardlink",
+      "sha256": "1dce1e8e3a69016dc6f7f0ab443d11075e2369320aaa2668a50302ac4c3692f8",
+      "size_in_bytes": 35786
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/thf_64.cell",
+      "path_type": "hardlink",
+      "sha256": "dfd3c2bb1861a095eee7e3f297625e4d42b8f15723c4556861fc29b4958a1cab",
+      "size_in_bytes": 4640
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/thf_single.xyz",
+      "path_type": "hardlink",
+      "sha256": "8d44d99a8e0eccb08bba062afa406c2465ad30ebad2f549c94810fd98ffb6294",
+      "size_in_bytes": 576
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/tpa.xyz",
+      "path_type": "hardlink",
+      "sha256": "1bae6c7910efe217f2ad14405bbe075e6a1b93c4a9f6557becd72890f5227c73",
+      "size_in_bytes": 1694
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/water.xyz",
+      "path_type": "hardlink",
+      "sha256": "b52680cb77ac317f44a29f0a7ca7eacca93b1601b207eb81953d03a0999912e3",
+      "size_in_bytes": 149
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/water2.gro",
+      "path_type": "hardlink",
+      "sha256": "bed394c1b95a97fb1682775ad4229264540e4f26f39d8f9553952ecefa9529a8",
+      "size_in_bytes": 948
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/water_md.inp",
+      "path_type": "hardlink",
+      "sha256": "6a00a112c96aee4a8055c35f5b7601578e22387a021143da2409761bdd68a018",
+      "size_in_bytes": 636
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/test/zr4o8-3.xyz",
+      "path_type": "hardlink",
+      "sha256": "6db38c01f4e6ab3fb6da9407d455a3ab487ccfb03c6b223c4e306e3356ef3a95",
+      "size_in_bytes": 599
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/data/toyff_angles.txt",
+      "path_type": "hardlink",
+      "sha256": "e0cf56983bbb8d0e1ea9daeff6a19c5100feadfd6577f87bfe3d5c2d41abbbce",
+      "size_in_bytes": 57141
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/000_units/__pycache__/a_reaction.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c1f5bfefcdaf2d37783107cdf17b07bbf91987db3302bb3cf31bd67efa1e6f93",
+      "size_in_bytes": 416
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/000_units/__pycache__/b_chbond.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e8bcfc0e42fc4c65aef72315cb50846be7b2018c243d8338003fdada18bbbade",
+      "size_in_bytes": 526
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/000_units/__pycache__/c_h2rot.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "89a1934a987193170e669197caf93b92086e78c826952e74d4cd8bdc8e971644",
+      "size_in_bytes": 763
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/000_units/a_reaction.py",
+      "path_type": "hardlink",
+      "sha256": "569c8b815fd431ab705616162b2c67621fcb9d7965e85a327b661844ac6451cd",
+      "size_in_bytes": 282
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/000_units/b_chbond.py",
+      "path_type": "hardlink",
+      "sha256": "96a1c019e4c074bfe96f6180ddd092adc847c4e14a3248fe3d4f76ec1fa6b3f5",
+      "size_in_bytes": 311
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/000_units/c_h2rot.py",
+      "path_type": "hardlink",
+      "sha256": "453de6a761044e05449e852c78aaf36c19a3bcf21945cbe3164c870c317991c2",
+      "size_in_bytes": 749
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/__pycache__/a_convert.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bfd67612ba58ca1fb6a75765abd33abf99d85b88004625f09f0bcedf2fec632d",
+      "size_in_bytes": 279
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/__pycache__/b_com.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cd0954d9047b2edec4b61557ac27e2f19f46bc59e55a4614a6fdad23e4e817ce",
+      "size_in_bytes": 475
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/__pycache__/c_carbon.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5338ae8108d3f48e67f26f88e38df2f01fff0903c897dd0d5ae754c59f4280b3",
+      "size_in_bytes": 350
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/__pycache__/d_size.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3dc1199d0b2e2b87bfb1e0320fc3e5ee5a93b6502b3d94246cd07aa4a2164101",
+      "size_in_bytes": 338
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/__pycache__/e_shape.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4fa3e82acf7ac2d835c75e75f04197cbbe0939dac550a5b2296d639a8a90f681",
+      "size_in_bytes": 884
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/a_convert.py",
+      "path_type": "hardlink",
+      "sha256": "efcbbd193c09e6a7ee59faf860693768db35d13cf384645b57d1dcf57162ffba",
+      "size_in_bytes": 122
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/b_com.py",
+      "path_type": "hardlink",
+      "sha256": "3579f823f8184b0fd7ac4791495dc961fdc9872acea07f41a2d67ce1caac6006",
+      "size_in_bytes": 945
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/c_carbon.py",
+      "path_type": "hardlink",
+      "sha256": "60328d2c2a7df9a7585343efa1dc6d6ea97a92e1ec1031e02d06c8bc98d3cdbd",
+      "size_in_bytes": 244
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/d_size.py",
+      "path_type": "hardlink",
+      "sha256": "05851c352b009f00501bd803393e900cefa3c2f3d03da725e0a24a43fde9d74a",
+      "size_in_bytes": 521
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/e_shape.py",
+      "path_type": "hardlink",
+      "sha256": "dc74cf78af3ffebbf22f3508d89748b4141802d0c32b26db41b0de1db27f0b3d",
+      "size_in_bytes": 1558
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/001_molecules/ibuprofen.sdf",
+      "path_type": "hardlink",
+      "sha256": "97f7198a78c0be39424ae45bda5efe7b28bb1b01d17b53108038bd5f2297df52",
+      "size_in_bytes": 5765
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/__pycache__/a_graphs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "356369143ebeccdd9893a47b6b49ca46286e826e7c7c2670d14cc7eeefc00247",
+      "size_in_bytes": 661
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/__pycache__/b_neighbors.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "715cc2390f84e39c2f60b6d21e1a6cbb9b673b1b94396cc30b03be9f376b3984",
+      "size_in_bytes": 1085
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/__pycache__/c_distances.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "492aee171fefe09a9f46454f3d8a8d46dbcf5cfc00ce22b42f3e20eb38a8b6c0",
+      "size_in_bytes": 664
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/__pycache__/d_symmetries.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f6a5af9b279da38758e259ae45997721d1182a0355b90e8122493ad59593e28b",
+      "size_in_bytes": 536
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/a_graphs.py",
+      "path_type": "hardlink",
+      "sha256": "af1a76697927d67ece1a8220d0f689dc64f6ba5757acadc482b4850ce93d27d2",
+      "size_in_bytes": 2116
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/b_neighbors.py",
+      "path_type": "hardlink",
+      "sha256": "17c514ca6860726bafdd35e9ace5e9f8526998138a960f2031865cb7fe7597c6",
+      "size_in_bytes": 1334
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/c_distances.py",
+      "path_type": "hardlink",
+      "sha256": "eae3f70dcec31173601d0b84ff933a224e2c94ca463525b490b684a6967cc57d",
+      "size_in_bytes": 1036
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/caffeine.xyz",
+      "path_type": "hardlink",
+      "sha256": "99f87ba2cc8dd4b48fdf8f8d7b3bc587377493b2496af4a8392b25940194159d",
+      "size_in_bytes": 1039
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/d_symmetries.py",
+      "path_type": "hardlink",
+      "sha256": "f6a8f4ca1e58b289e989e36420f708067d43f1640aea7a515c17105fc8f81497",
+      "size_in_bytes": 737
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/002_graphs/ethanol.xyz",
+      "path_type": "hardlink",
+      "sha256": "598f4e3dbe1d7b47b6e6d6387b1abc4d6cf2c2e0a5377dc1caf27b36fe8f8b56",
+      "size_in_bytes": 415
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/__pycache__/a_bond_length.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "08cbf299611f69e2a5ba170d4c33e5c2e3fa8ffac0e981179222e5056223c80b",
+      "size_in_bytes": 431
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/__pycache__/b_bending_angles.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "63160c85d71092ccb4daf0971f9e822c808ba3c0ae0241406fd58d59d6b3004e",
+      "size_in_bytes": 764
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/__pycache__/c_ff_hessian.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3862dca44118eb6c69325854f3f2aab0ff35407f226a81555e016dcadb59a4ad",
+      "size_in_bytes": 5547
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/__pycache__/d_dft_hessian.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3fd205529d7dc3f70a5b48a89ada46087bd71d6102aa5bb92c6ba5563de8abe9",
+      "size_in_bytes": 5068
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/a_bond_length.py",
+      "path_type": "hardlink",
+      "sha256": "f8f2e247e08807e15b0e2d6df9c8716fb00f28daf7bccc771131a9449637fec2",
+      "size_in_bytes": 460
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/b_bending_angles.py",
+      "path_type": "hardlink",
+      "sha256": "d06f164a355dcb0b0cb5ba396d750716f23bad1033c27c22021f1e628b4e5f45",
+      "size_in_bytes": 1360
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/c_ff_hessian.py",
+      "path_type": "hardlink",
+      "sha256": "68f02f7e2ed5960368d1cd4b4c7f4cae6cd75b5c925b720ad70b707cb6742e5a",
+      "size_in_bytes": 5899
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/d_dft_hessian.py",
+      "path_type": "hardlink",
+      "sha256": "5d53e4ce72f7e1a0f7e686f529e2a2d81bf29c2cf25e80d16f18c832d73c98a0",
+      "size_in_bytes": 5320
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/dopamine.fchk",
+      "path_type": "hardlink",
+      "sha256": "49c8d301921280ab7c6eb29f4562c5f216ec3329c017edbffb55704a108b5e4b",
+      "size_in_bytes": 39116
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/dopamine.xyz",
+      "path_type": "hardlink",
+      "sha256": "4f0c83f6c8c164dc9af38542f3f2c8a0cd2f32b03bb48c06991f43950d11368a",
+      "size_in_bytes": 686
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/003_internal_coordinates/propane.xyz",
+      "path_type": "hardlink",
+      "sha256": "6abf3aacba1256d9e532249db7722df56b2e4b3fe7facfee245110cd6c5f62ef",
+      "size_in_bytes": 488
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/__pycache__/a_propane_types.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b11ae04012383f120ab5b5b789aa5ba4ab1250d3e9c5207470b07afceb6a3365",
+      "size_in_bytes": 1008
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/__pycache__/b_dopamine_types.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b21283d714c344d1e1bb1e2d1927f3a805cbb789474a87d88ab83b6a8a909e3c",
+      "size_in_bytes": 836
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/a_propane_types.py",
+      "path_type": "hardlink",
+      "sha256": "ab8f57b11674c0f480dd2e00aa23adf74e98ea73beaa2e9f8552b119c80f3c8d",
+      "size_in_bytes": 1857
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/b_dopamine_types.py",
+      "path_type": "hardlink",
+      "sha256": "2db1e12f074375e4948452223cd16afcdbc19397080a7036722717583a93d1ce",
+      "size_in_bytes": 1502
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/dopamine.xyz",
+      "path_type": "hardlink",
+      "sha256": "4f0c83f6c8c164dc9af38542f3f2c8a0cd2f32b03bb48c06991f43950d11368a",
+      "size_in_bytes": 686
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/mfi_fragment.xyz",
+      "path_type": "hardlink",
+      "sha256": "dd30b9b83eef0481d38523f4abec54808307246e59bd4b9f3e5f8dc18447caef",
+      "size_in_bytes": 4672
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/examples/004_patterns/propane.xyz",
+      "path_type": "hardlink",
+      "sha256": "6abf3aacba1256d9e532249db7722df56b2e4b3fe7facfee245110cd6c5f62ef",
+      "size_in_bytes": 488
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/ext.cpython-39-x86_64-linux-gnu.so",
+      "path_type": "hardlink",
+      "sha256": "f917008dad1a6bb591a14d8b6ba941c011894bf7bb47ead8577167b614b330d2",
+      "size_in_bytes": 265504
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/ext.pyx",
+      "path_type": "hardlink",
+      "sha256": "24caba8de1bb342a5db4d16ef57d8b5a609764f6674b55224c9a6af1be854668",
+      "size_in_bytes": 11835
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/ff.c",
+      "path_type": "hardlink",
+      "sha256": "9fb4812830f8116f2d38f3e84110a29547139ac560b20aa1fb74d0ad5e4eaba8",
+      "size_in_bytes": 4528
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/ff.h",
+      "path_type": "hardlink",
+      "sha256": "a3d69b5e901a6f867b0d1aed6ec254ab18719ffde73f82bb646c329fb587187c",
+      "size_in_bytes": 1698
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/ff.pxd",
+      "path_type": "hardlink",
+      "sha256": "01d13f4a0e9df0ab97cd33e81750d15a4a6b964c7c91e586bcfe7ccca020e1be",
+      "size_in_bytes": 1695
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/graphs.c",
+      "path_type": "hardlink",
+      "sha256": "d1afdbf8b34c92d1b555fc1dde42e6d59cd1ebf1ba5ad389e2a75c03e9747d81",
+      "size_in_bytes": 1553
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/graphs.h",
+      "path_type": "hardlink",
+      "sha256": "3404610a2d730e3fb1dfb5e6356f584a7797b409c4078755d5f350dd895c1765",
+      "size_in_bytes": 1095
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/graphs.pxd",
+      "path_type": "hardlink",
+      "sha256": "d4271ff2287db5282268278c1735c7d59809a22460e4a43c49507eb7ac9ab983",
+      "size_in_bytes": 1028
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/graphs.py",
+      "path_type": "hardlink",
+      "sha256": "4c2e3fa1a53ba88d25cda6d765ffd4325414a2219bfd5d9e4d26b2b29254ed09",
+      "size_in_bytes": 73335
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/ic.py",
+      "path_type": "hardlink",
+      "sha256": "2954a63dbfac3c873c0a4b66a1e7d44804d0afa4a25d270cee3320e3f1e230ee",
+      "size_in_bytes": 25135
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "1abe0bac391c9e0f545955e051cffe38b6d847a0c48fd723d5ee1dbbb09ee772",
+      "size_in_bytes": 1923
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a24707c1dc0f87f785b7dd773980a5185306018ee96023b788ead4723152d85d",
+      "size_in_bytes": 1080
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/atrj.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ca24f4564799d1cef7e9d6fd02c853cefc9cbadc7aa335c2d023840bbea96154",
+      "size_in_bytes": 4245
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/chk.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "950b82505f11bb2fe0cbff32551b7b37921c20c905292dcf692aa01591da6378",
+      "size_in_bytes": 4919
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/cml.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bf57fe0e18fe063212059006b7ca4e3be58a913f9cd329d96fb6c852873ada15",
+      "size_in_bytes": 6048
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/common.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b7848c782218a25f59e6362009565557e8bbc9be6375a7b6ee1d83d50d191b29",
+      "size_in_bytes": 2843
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/cp2k.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0139204d25ebd9fea92449fe99f1af6a86a9c3fde137f46287c7459a661c7848",
+      "size_in_bytes": 11228
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/cpmd.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e7fa41c4ca54632e0a7181998f8ede33f41c77c7b73e14b1982be7d9cc89d75a",
+      "size_in_bytes": 1948
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/crystal.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "b6ce1fec81a7075de26b88d625ed60955213b593fb0d6735d6dfba547ecb6684",
+      "size_in_bytes": 3436
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/cube.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a011421ded8973cf38b92fae393bd874b183ec1cfc10bb9c66d84f4d7049bae0",
+      "size_in_bytes": 8013
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/dlpoly.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "df93c7da06f085af4e2b631dd3862988553207a7c3c8edf16a49b3276cbb57da",
+      "size_in_bytes": 9497
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/fchk.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "55e52a402ed95e5eba02b0f78c3b9d85d858c66df4cf4b8a802e4ca9c1cbf979",
+      "size_in_bytes": 6376
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/gamess.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4dced57c718da0e2dbdf19433a312a89df5192336042549839ba2d738917b9f2",
+      "size_in_bytes": 7375
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/gromacs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "85ebcc041ab1ef5e1a9a9c5a2763da4126242f1df5d636c0f02c76697a8fbeed",
+      "size_in_bytes": 2885
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/lammps.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "14bf22fbb68075927513d2ad15d39b0c176fe0f8cb8d67350c8801d46bb6b1de",
+      "size_in_bytes": 3269
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/number_state.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "017443fc9c41c0f9303b2ba38e8942bb071e3aaa5b4991ac4ed16679e5ad4ce7",
+      "size_in_bytes": 10712
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/pdb.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "88edb58a955ae682d6424e92e446b220ba422e068965ebb0c698333028dddb35",
+      "size_in_bytes": 3941
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/psf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "80e08e11216bb489f4f98df65a2720ba75d1beca23c891a1859d9d7869931565",
+      "size_in_bytes": 13002
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/sdf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "15147764cc87378db9c02efba0ddbaca11e7900cb7e29f5745d86401ffb6971b",
+      "size_in_bytes": 3349
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/__pycache__/xyz.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "1100e6a0078e756910c0867728bc01eb65c4fc928d8293706230717f23997fa9",
+      "size_in_bytes": 8217
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/atrj.py",
+      "path_type": "hardlink",
+      "sha256": "ff7b501b5202423047d082dc3ecbd53c824932c01c483f68840d917902ff8cda",
+      "size_in_bytes": 4626
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/chk.py",
+      "path_type": "hardlink",
+      "sha256": "1b57dcd213252396043cbe930af6c198921800bac320afc50c84a1f206673ffb",
+      "size_in_bytes": 7788
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/cml.py",
+      "path_type": "hardlink",
+      "sha256": "6aa0eaa54a819972e11effeb6181c302f65a461f9c0a08e3768a6a8f7943f0ec",
+      "size_in_bytes": 8340
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/common.py",
+      "path_type": "hardlink",
+      "sha256": "79bdf978fdc742133e2b6f7308af4b753662c27ca8b0f79f87b868b7586eb996",
+      "size_in_bytes": 3365
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/cp2k.py",
+      "path_type": "hardlink",
+      "sha256": "6c82956bcacd4ee9c7a195fa035c3569f44bc90510ec04bfa6c7b5db9b0032a0",
+      "size_in_bytes": 13374
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/cpmd.py",
+      "path_type": "hardlink",
+      "sha256": "c4fc556140438b7cdefffa62a852bf18f3a5117ae924568d2be44407035572cd",
+      "size_in_bytes": 2696
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/crystal.py",
+      "path_type": "hardlink",
+      "sha256": "246db65ac65687f13e1169d7e222ec0cf9d81577da9da65ac21faea6c6a3e667",
+      "size_in_bytes": 6362
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/cube.py",
+      "path_type": "hardlink",
+      "sha256": "ad8b4edb7b5e4b08d0ac5dd11ec0843bfe7b9070c004221a50a1a1d5e951c4aa",
+      "size_in_bytes": 9526
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/dlpoly.py",
+      "path_type": "hardlink",
+      "sha256": "823bc224c3a412d49f60d32ece6ec7c9ba60ba425714c912d6d7328b24b94ec0",
+      "size_in_bytes": 12544
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/fchk.py",
+      "path_type": "hardlink",
+      "sha256": "b477e8dc9e1aaae7e6dec59d1ada09f1e4df82b773eb4c124d39f3d1180f4022",
+      "size_in_bytes": 8685
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/gamess.py",
+      "path_type": "hardlink",
+      "sha256": "88cf2fa1a39571965929abd15560ea28b01f407166ecc2335d73587011a2fa90",
+      "size_in_bytes": 8255
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/gromacs.py",
+      "path_type": "hardlink",
+      "sha256": "c4177724311d2da439c76e225159342156ee0ec1b7eeec0f27c52b7a3ee88147",
+      "size_in_bytes": 4172
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/lammps.py",
+      "path_type": "hardlink",
+      "sha256": "48fba2ca1915773a250fb3ceba5e178edea7a648a616da1922f572c4dca2c860",
+      "size_in_bytes": 4723
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/number_state.py",
+      "path_type": "hardlink",
+      "sha256": "cce0f68489873dceed8b9c10767e0760ebe45cf1baec8cd4d2c8d5fe39507007",
+      "size_in_bytes": 12169
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/pdb.py",
+      "path_type": "hardlink",
+      "sha256": "f9f790eccd4cac8bd6756d3453f28bcdc6d783e1a9123958cf1d7c37fe72a610",
+      "size_in_bytes": 5460
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/psf.py",
+      "path_type": "hardlink",
+      "sha256": "a57b1729037e39a20e7b1eb583cb2fac50bc120b44db19076214e9efb42a2382",
+      "size_in_bytes": 16026
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/sdf.py",
+      "path_type": "hardlink",
+      "sha256": "0484b9636debe8a9a97c4ada1f2f6bf8741f55317c28e06432d28ac7608cdbf0",
+      "size_in_bytes": 5426
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "48b28f2ec5d9d345626042bb2c56a8424032f421b1ab24de23e8ee1f6d470de0",
+      "size_in_bytes": 946
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "687e98e2560fc69744731728364f84334a10085ccd58090aa34168878fb2adee",
+      "size_in_bytes": 145
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_atrj.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "531fa7a6df659b68b688af2dd0e70e6df70f7a5b0600fcecf0ccd50ef29de5f4",
+      "size_in_bytes": 1478
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_chk.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "5e3d0297c3cf8f2c14002f84e9d7e973ffbdd33aacb80340eb244e49c9427e41",
+      "size_in_bytes": 4711
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_cml.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "50444d7c84cb75c0f8661274151e295bd21517f68c64ab0c67fa1f74733385b5",
+      "size_in_bytes": 1579
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_cp2k.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a7f255d3670e151d7fa10fc8b217eadb8d13913a1e0575dfb84b029e325c5db1",
+      "size_in_bytes": 2643
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_cpmd.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e018a5ff246fd1395fe4142c05e27a47000ab048a40f0ed8b067ac9f991374d4",
+      "size_in_bytes": 1105
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_crystal.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3269aee02b3554f768bd1ac48fb8893b15a24625601815bb87fdef3bd9965ebb",
+      "size_in_bytes": 2639
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_cube.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "2c3b3d8f1b65e9688be457cda4572f7d5b8fc87bb769a97ebefbede73f706452",
+      "size_in_bytes": 3512
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_dlpoly.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "95ea31f22ea7366e2222e3af64180a9154c67840042a92533d2f51f3a9915280",
+      "size_in_bytes": 2199
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_fchk.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "67c2d640361e59aa287913cb7783495ca2b0fbec93b5867fef30772408414ad6",
+      "size_in_bytes": 1722
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_gamess.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "60e2cc2066edd7ec2e229a3f456974bb40813a75b920e72a02e761d34301124b",
+      "size_in_bytes": 1868
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_gromacs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c9469e0ec03697ce0511d93de93fff84fd094bab980efdf40af0b7554040ee78",
+      "size_in_bytes": 980
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_lammps.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e109cd1c6704861015d94fccdb2dd61354983091dd7eba388deb63289c813d2c",
+      "size_in_bytes": 1286
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_number_state.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "aea480250c3271bd13de9a6dce4a7c704375d9d02205006b0466fa675455beab",
+      "size_in_bytes": 1750
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_pdb.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "13d29f81a5955fa40ca11ae2c47f973535104101797f603be8cfbc7e63e8b550",
+      "size_in_bytes": 2166
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_psf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "cac3bade8ad7ff417ee3dfd698dc4ac0818b34412312777171ee8d8ecb9cc77d",
+      "size_in_bytes": 2955
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_sdf.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a7e0ede4d5b9e05bad2f233e6c3047d95cf388d0fa0ac00d7b44de1b563cc430",
+      "size_in_bytes": 2049
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/__pycache__/test_xyz.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "53a468ae6370dadf34ef496fffcc1371afba3f005f2788fcdc11b3207b75410e",
+      "size_in_bytes": 3202
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_atrj.py",
+      "path_type": "hardlink",
+      "sha256": "ae41493f0a0acb50e98c764d1cdb7744843f17e169c16843fffe18684e838f7d",
+      "size_in_bytes": 2860
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_chk.py",
+      "path_type": "hardlink",
+      "sha256": "18c87a68231475db2429b29dd49cb0fb7a45d9f0c1885cf0a4971d626427be6e",
+      "size_in_bytes": 4577
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_cml.py",
+      "path_type": "hardlink",
+      "sha256": "c52d46b0703982488ec4e685beba440c4211507e39a846b9c10dd1a2e21c9417",
+      "size_in_bytes": 2327
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_cp2k.py",
+      "path_type": "hardlink",
+      "sha256": "c790d68f89ed4242608c1c32de1e340aec13bcf67a41e324edcc071979b2202a",
+      "size_in_bytes": 5227
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_cpmd.py",
+      "path_type": "hardlink",
+      "sha256": "5672879bd54aeecc568332880642db3440042f3d3091b5bc4a99c72f9d784863",
+      "size_in_bytes": 1955
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_crystal.py",
+      "path_type": "hardlink",
+      "sha256": "14eecf61a108e4710f03607d41a9ba4a65b51a9d524f2aab47c7f15d332180c5",
+      "size_in_bytes": 3936
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_cube.py",
+      "path_type": "hardlink",
+      "sha256": "62c2ebbcf487cf1a78c948dde5595b188c2554c898fedb56b157808aa9ffe280",
+      "size_in_bytes": 5705
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_dlpoly.py",
+      "path_type": "hardlink",
+      "sha256": "98808a2373dc982f4cecd589eb9c394613c622a76c43ca576c11130ec2cd5873",
+      "size_in_bytes": 2985
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_fchk.py",
+      "path_type": "hardlink",
+      "sha256": "72f78e1c43d7eb5a90d4783a10c5f029e197ba209b4481603d5ff26121b4c33f",
+      "size_in_bytes": 3273
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_gamess.py",
+      "path_type": "hardlink",
+      "sha256": "df2cda00c9703b057382eafbd0a91c333f98affc3a2c3e83e81097b298778c6e",
+      "size_in_bytes": 3002
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_gromacs.py",
+      "path_type": "hardlink",
+      "sha256": "e47d2d6ebfbad99783fa3e2cc9f26cb77ff12f346e4e21a531b8d24969a3c583",
+      "size_in_bytes": 1627
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_lammps.py",
+      "path_type": "hardlink",
+      "sha256": "c2082a971fe2efc7b2c0d10f3623d07ad533f63ddcca9a056486407723a7ae76",
+      "size_in_bytes": 2280
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_number_state.py",
+      "path_type": "hardlink",
+      "sha256": "73bb663356e00af4a0603846cc50d1729bbdccaa92a1d598660e104015c8d32a",
+      "size_in_bytes": 2637
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_pdb.py",
+      "path_type": "hardlink",
+      "sha256": "766ec72b7ca5af2be1183da73cef7a184ec1e8a3b3bc253887729b4fe6512dc2",
+      "size_in_bytes": 3094
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_psf.py",
+      "path_type": "hardlink",
+      "sha256": "e9f6a4a75a4a1f4b2d3513a3bff1398e6513f4922f01ccfaef0cd874f7670ec2",
+      "size_in_bytes": 3440
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_sdf.py",
+      "path_type": "hardlink",
+      "sha256": "6d8c2c8cb00de90572e7cfc19359e1c42d26073ad89b7a9bea6f059d7000bbd4",
+      "size_in_bytes": 3062
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/test/test_xyz.py",
+      "path_type": "hardlink",
+      "sha256": "05f69a13d4ddd7a1b7f799a93a2ee446703f9cd4fab9f5c8babaa4d381788acd",
+      "size_in_bytes": 4858
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/io/xyz.py",
+      "path_type": "hardlink",
+      "sha256": "cc7d0e90801e5b2623d49e7210ed06a74e5b6e5592972f5e500599bf58b11334",
+      "size_in_bytes": 9574
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/isotopes.py",
+      "path_type": "hardlink",
+      "sha256": "7b4b1dfe00395e9580a9520c30c609bb28e6d031e5105415f8fc64dc050ce13f",
+      "size_in_bytes": 5495
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/log.py",
+      "path_type": "hardlink",
+      "sha256": "fb7a56f772f70de9171f4ecd5a29a0729008ca548453c3822ec04a13a8dc0611",
+      "size_in_bytes": 17958
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/minimizer.py",
+      "path_type": "hardlink",
+      "sha256": "e25d1eeb452ef1fa1d6b97aaae449f9fc214ff24d1f00fb75147b8aafb0f6c7e",
+      "size_in_bytes": 69988
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/molecular_graphs.py",
+      "path_type": "hardlink",
+      "sha256": "b5d154e11654867d9d9fda79dddabce9ce9d1c65e8121b6b63a38182b8a8d277",
+      "size_in_bytes": 25663
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/molecules.c",
+      "path_type": "hardlink",
+      "sha256": "7a6e45760a35220f668824171b8a7ccc41b5a632f10398ca81ed7571cdf04b67",
+      "size_in_bytes": 1435
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/molecules.h",
+      "path_type": "hardlink",
+      "sha256": "5fbaa3d78a33cb22d9b0643981208c41d0d532d0f3e660f95f6627c2dd5b39fd",
+      "size_in_bytes": 1209
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/molecules.pxd",
+      "path_type": "hardlink",
+      "sha256": "e7b51deb3eba0f8b53daee52bbe0f535ec4240ff7d0325860718bb7b519e6599",
+      "size_in_bytes": 1140
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/molecules.py",
+      "path_type": "hardlink",
+      "sha256": "39776adb4b0fffc5cce84a8bf66ccd3b271ed72f5d053e90c08e53546afb8e76",
+      "size_in_bytes": 12152
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/pairff.py",
+      "path_type": "hardlink",
+      "sha256": "08655bebbeb98645406cc98ca43027c05e9d9614ebb1ec267bf638c61d7bd08b",
+      "size_in_bytes": 18168
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/periodic.py",
+      "path_type": "hardlink",
+      "sha256": "e03506eb16912071d73d08d027d6d2042ee9f76dbc86a4ccadc354cf7426bc8c",
+      "size_in_bytes": 5127
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/quaternions.py",
+      "path_type": "hardlink",
+      "sha256": "add94aacb0d2ab5a6603a51fe68ef4d57e4717d1870161eed49d280a9925eb59",
+      "size_in_bytes": 3877
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/randomize.py",
+      "path_type": "hardlink",
+      "sha256": "9c03e6e7fed1a2240445ec93bbf8ba19bfc6ef2241fd7ce8fe3efd886dc28925",
+      "size_in_bytes": 19119
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/similarity.c",
+      "path_type": "hardlink",
+      "sha256": "2469661980abb338fab8c5dbada52e0c25d108bf7b53c2578fb6f580cb24782a",
+      "size_in_bytes": 3443
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/similarity.h",
+      "path_type": "hardlink",
+      "sha256": "c33288462f5860eb6ccf9576e75429602f008b793de975a975a86487cad174da",
+      "size_in_bytes": 1402
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/similarity.pxd",
+      "path_type": "hardlink",
+      "sha256": "37e82cdb1d0bcc0363ba5fc5af996ed39a242eb0b777fca6ff02e6524a771bdf",
+      "size_in_bytes": 1339
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/similarity.py",
+      "path_type": "hardlink",
+      "sha256": "8859b7ed7b34d17f57a73f8b1f13b3afaa189951a958c912a7cd0cdf040a3582",
+      "size_in_bytes": 5474
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/symmetry.py",
+      "path_type": "hardlink",
+      "sha256": "c4137ab25249aa5521a5e31fa7de52fded138044999bcf79305966cc54356e5c",
+      "size_in_bytes": 1903
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "48b28f2ec5d9d345626042bb2c56a8424032f421b1ab24de23e8ee1f6d470de0",
+      "size_in_bytes": 946
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/__init__.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "42c50c20f2e33816a38243b5ef9399d7b70f4bb86b0d9beff454c0d165241b87",
+      "size_in_bytes": 142
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/common.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0ad1235e38e25a229ca2041fe296650a0996504251af967b3de62bed9f3f9150",
+      "size_in_bytes": 2297
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_binning.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "47e8a8b028c78ea7c3bfd15a6a8394ed3a1c42f7c5b7415288a29037ffc498a9",
+      "size_in_bytes": 8008
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_clusters.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "0e8742e4c34885141cc488a45e28a9c46642fa3889366a6451d938a7aa7c4fde",
+      "size_in_bytes": 1665
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_data.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c59cd78a4428f3f513e7b82d1eed2f7cbc907cca468a671b136794dfc180dae4",
+      "size_in_bytes": 1646
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_examples.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "c5c5b7bdc2a17bdf9f517a69ae8a635acbb81913766b88625ca5056744e58a3c",
+      "size_in_bytes": 4904
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_graphs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "46623f0f38dbaefe483e951cbf15d0c5951c87db8ba9de33d60b3e351bf69834",
+      "size_in_bytes": 19765
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_ic.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "bcd9851017e71a1a59afbeabceffffa92bfde8ce6d6002e75ced7e5d788f073a",
+      "size_in_bytes": 7987
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_log.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "056e4f637e0b4bd1978ddf0c4d284697d65c1d0f7c531d3b86924c9819aaccc4",
+      "size_in_bytes": 3557
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_minimizer.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "aee5dcc62eb03632bebfebf6b9fa9cf79c94c7f75434eaf1992f4ec9e9b335b8",
+      "size_in_bytes": 11088
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_molecular_graphs.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "e2bc4ef9bf80ad3d744d777ca0a2301764128641abe9f0d3b0c29e1512cc92fd",
+      "size_in_bytes": 21889
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_molecules.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "ebc99b189af587b5aaad8ebdb22f4b45c14f70d9ef32e3494ac8694e464fddd3",
+      "size_in_bytes": 8174
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_pairff.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3a6a96acda3881499d3bf04b4d78375d49ba90a8aa84549d867f5c02b1d8b1f4",
+      "size_in_bytes": 15922
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_quaternions.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "a76ef56a3322abc460eb457f9041c6dd1f0e94a9804a845cd6bead87a8c3e7c9",
+      "size_in_bytes": 1681
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_randomize.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "6cf099091a68e59fdc3a7a7b0cdad59871df8a298046eb3fbcf9ad8fc3e84131",
+      "size_in_bytes": 3257
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_similarity.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "08d07abbdbf9f7c1880709a14da2597cb0d1667d7464fe7334077f452bdb3e91",
+      "size_in_bytes": 2489
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_symmetry.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "3e530f15cd299b354ecf2b6352bd63289b5b40a2adf328f3a3c41c26c576c340",
+      "size_in_bytes": 2276
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_toyff.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "76bd5606d7da2a4a22368c2a4f387406bd113de9f8941077257fb67bb1562cb0",
+      "size_in_bytes": 6607
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_transformations.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "f4342d3be42ddbd2d0efb2d904d56e2fbbe7eb68059533e7b1ae8a58fa0c3ffe",
+      "size_in_bytes": 15926
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_unit_cells.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "d8977a23cbdaf9007f09e45b95618fbf7e0f6ebbb53feeb5743cccbcd7ffc139",
+      "size_in_bytes": 14841
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_units.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "dd0e55687a83416098365f6946359c59d38e5146e1335f5d9467fea53196cfec",
+      "size_in_bytes": 639
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_utils.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "895484dcb7f5984bf92d289212deda17e7ff965fef95fe0f3a63fa1ae14f1fad",
+      "size_in_bytes": 4911
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_vectors.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "4916a52e8ce3819fe8eeed3843e9aebdcf50c13ebbaea4d0ab1f10d5dd397dc9",
+      "size_in_bytes": 2445
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/__pycache__/test_zmatrix.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "de3d41ad0b3fc275d758e47c0c5600b586b0e6fc93ec503376b1093897219c17",
+      "size_in_bytes": 2301
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/common.py",
+      "path_type": "hardlink",
+      "sha256": "2962bafae520521a830abd0e892672110e55996151a21764b44222b24e5a726b",
+      "size_in_bytes": 2892
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_binning.py",
+      "path_type": "hardlink",
+      "sha256": "f84a419c50b1ae2f8ae26340b1eec1ef084ac497d2410622d54792ad04700062",
+      "size_in_bytes": 9280
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_clusters.py",
+      "path_type": "hardlink",
+      "sha256": "cbe1442b2e3bcd1b6e5f29dd036cafbd8dfb5d75fda5efd2795381aefe15f0ff",
+      "size_in_bytes": 2389
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_data.py",
+      "path_type": "hardlink",
+      "sha256": "e20184993572f2b57ee51f1e9c4b08c7e863fcd2e8635e29a66986a2b3afdb94",
+      "size_in_bytes": 2453
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_examples.py",
+      "path_type": "hardlink",
+      "sha256": "ec35189637b300f01259b433495d542ff29358a34f51c0c64c11c78dfdedb1f8",
+      "size_in_bytes": 4874
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_graphs.py",
+      "path_type": "hardlink",
+      "sha256": "71f1a3a01a7ee8f869e573c4df33e1361e815770abf546f90db4f1992d737875",
+      "size_in_bytes": 25397
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_ic.py",
+      "path_type": "hardlink",
+      "sha256": "246ee2e82dd60cc2b835a5c6d79448c5c97ba55a3a27b4956ecf80bb18650cb6",
+      "size_in_bytes": 7317
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_log.py",
+      "path_type": "hardlink",
+      "sha256": "79f17840aa79e836d77b7597f6d94b572baa3d455e58b3e54c90eca7694fa1d8",
+      "size_in_bytes": 3904
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_minimizer.py",
+      "path_type": "hardlink",
+      "sha256": "8f308284ae7cc9a579e50bdd815e51d731cf90589c6dcee04a7f641ffbf2a1e7",
+      "size_in_bytes": 14975
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_molecular_graphs.py",
+      "path_type": "hardlink",
+      "sha256": "35ae3fd519a1f92c84a9a50ed08885adfcf5288cbbf2e5c7103afa794a7f3b82",
+      "size_in_bytes": 24785
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_molecules.py",
+      "path_type": "hardlink",
+      "sha256": "b828ea43a12090616b9269cb7e17d0e045c2487ac2ec3bb07f97f5ae2c9006a1",
+      "size_in_bytes": 8947
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_pairff.py",
+      "path_type": "hardlink",
+      "sha256": "4af2711ede390b3c769916c962466f8ef3b56e18b3525d34c377ac000be58f4f",
+      "size_in_bytes": 20534
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_quaternions.py",
+      "path_type": "hardlink",
+      "sha256": "7131d1333a7e61ad3a7ce7a1c8ca8b92a5c7d8d415fadd4870f992eae961d0ae",
+      "size_in_bytes": 2233
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_randomize.py",
+      "path_type": "hardlink",
+      "sha256": "2ade4dc122df30ca0e59bdd04db1bd7a6949df24cd8e175842d517a4bf1bc04a",
+      "size_in_bytes": 4651
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_similarity.py",
+      "path_type": "hardlink",
+      "sha256": "c427cb50013017bd25f89f6a579b6a91eb945fc6f5d8b1235cd1fb1fa54220f8",
+      "size_in_bytes": 3583
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_symmetry.py",
+      "path_type": "hardlink",
+      "sha256": "ddc53e0908f301474774073ea6c245f8835abe1af6e5476b9273ceefaf7569bf",
+      "size_in_bytes": 3096
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_toyff.py",
+      "path_type": "hardlink",
+      "sha256": "51162d06fd5e7edd5af64b7dff29ec65da6d815b6d36f57ebe3bbc8a7b32d093",
+      "size_in_bytes": 7572
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_transformations.py",
+      "path_type": "hardlink",
+      "sha256": "272b360b080aedf788f5ac8a4a12b513adcb284911424749b8fa697b88c68f7c",
+      "size_in_bytes": 20031
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_unit_cells.py",
+      "path_type": "hardlink",
+      "sha256": "55ba9e2191c980ef1506928eb62ebfa94dacf5d528ecbbf12723db9b88ed9d8e",
+      "size_in_bytes": 20815
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_units.py",
+      "path_type": "hardlink",
+      "sha256": "790dc8af2fe8291959f82e7458e0f64ce876f1d8ee3c20b96685064121fa587c",
+      "size_in_bytes": 1199
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_utils.py",
+      "path_type": "hardlink",
+      "sha256": "612ec0cbea693aae11c367b2ad1469c1dacc9db3b5ed166b2e332cd9ffec33da",
+      "size_in_bytes": 4479
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_vectors.py",
+      "path_type": "hardlink",
+      "sha256": "563368c4d20c19f72688ad206e5cb8c0a81d48cc1dbfc78d46971bc91668e84b",
+      "size_in_bytes": 3160
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/test/test_zmatrix.py",
+      "path_type": "hardlink",
+      "sha256": "b5bfbd596f05611c9a8621331c89d161804cced4f3bfa7f9f4e2b50962f2dbb1",
+      "size_in_bytes": 3954
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/toyff.py",
+      "path_type": "hardlink",
+      "sha256": "1467e446b6ce1dfd9bd8bb9a5a187e9eb788cb0db6d416d4b991bdec0d47c9b8",
+      "size_in_bytes": 12376
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/transformations.py",
+      "path_type": "hardlink",
+      "sha256": "bc471d4c76fd7976183f58e6cd28a41f7f4a5eaba280e1a26853263659711838",
+      "size_in_bytes": 18567
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/unit_cells.c",
+      "path_type": "hardlink",
+      "sha256": "60855d0f0477b92955898b6d99ba6300f7da24fc92af10b9aa91963a11d365ca",
+      "size_in_bytes": 7516
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/unit_cells.h",
+      "path_type": "hardlink",
+      "sha256": "38d50542842ca06756fa2af7d2fe5b993a27fdabc443ea6e66915f5f7128e7d4",
+      "size_in_bytes": 1213
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/unit_cells.pxd",
+      "path_type": "hardlink",
+      "sha256": "a39c960dde09b09bb062b3b16e821852e6985b6525a146c778fc5c2f7923c478",
+      "size_in_bytes": 1146
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/unit_cells.py",
+      "path_type": "hardlink",
+      "sha256": "7b3629a386b420b8d0dd38492f42150ff83f6efaa49aed15af3d978bd0c3092a",
+      "size_in_bytes": 15006
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/units.py",
+      "path_type": "hardlink",
+      "sha256": "25d59e1da7cfa7f39eede44c230a6eb571472609a1b436eb27aef4c75806814a",
+      "size_in_bytes": 5767
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/utils.py",
+      "path_type": "hardlink",
+      "sha256": "3c23e42754c19463db867e73f30a68246c216e53d75f52b309d761e2c87acc9d",
+      "size_in_bytes": 13915
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/vectors.py",
+      "path_type": "hardlink",
+      "sha256": "dc4fb38f1115305ae25b94013431d767acfd83f2b22499be17ed61d5d7fae76f",
+      "size_in_bytes": 2624
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/version.py",
+      "path_type": "hardlink",
+      "sha256": "74558e41c7258f27b717a83323e11b413363bac17ae5c1219477a3bfd49b217b",
+      "size_in_bytes": 119
+    },
+    {
+      "_path": "lib/python3.9/site-packages/molmod/zmatrix.py",
+      "path_type": "hardlink",
+      "sha256": "330291cf7ff2110f15c60a91deb8c45bf706c8bb92d84ddc3f2b32c91abe6d1c",
+      "size_in_bytes": 8007
+    }
+  ],
+  "paths_version": 1
+}

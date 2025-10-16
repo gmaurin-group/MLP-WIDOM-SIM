@@ -1,0 +1,42 @@
+results_widom_qmof-a9be673_mepoml-geo_opt_odac/snapshots/widom_qmof-a9be673_mepoml-geo_opt_odac_ET_OPT_e_min.pdb
+
+
+FRAMEWORK NAME           : qmof-a9be673_mepoml-geo_opt_odac
+FRAMEWORK COMPOSITION    : Al4H12C16O20Al4H12C16O20
+FRAMEWORK N_ATOMS        : 104
+FRAMEWORK MASS [me]      : 2304780.7347755916
+FRAMEWORK MASS [amu]     : 1264.356308
+FRAMEWORK CELL PARAMS    : [ 13.379014  11.094217  13.167643  89.999851  90.000346 101.398926]
+FRAMEWORK VOLUME [bohr3] : 12929.248690199995
+FRAMEWORK VOLUME [ang3]  : 1915.9169584361844
+
+ADSORBATE NAME           : ET_OPT
+ADSORBATE COMPOSITION    : C2H4
+ADSORBATE N_ATOMS        : 6
+ADSORBATE MASS [amu]     : 28.053999999999995
+
+FRAMEWORK ENERGY [a.u.]  : -21.215311020378955
+ADSORBATE ENERGY [a.u.]  : -0.9124889532836645
+
+
+[INFO] MC steps: 10000 | Device: cuda | Seed: 12345
+1000      : Adsorption enthalpy (Qst) : -44.52 kJ/mol 
+1000      : Henry coefficient (KH)    : 0.40954 mol/kg/Pa
+2000      : Adsorption enthalpy (Qst) : -45.12 kJ/mol 
+2000      : Henry coefficient (KH)    : 0.44007 mol/kg/Pa
+3000      : Adsorption enthalpy (Qst) : -45.19 kJ/mol 
+3000      : Henry coefficient (KH)    : 0.44930 mol/kg/Pa
+4000      : Adsorption enthalpy (Qst) : -45.24 kJ/mol 
+4000      : Henry coefficient (KH)    : 0.42826 mol/kg/Pa
+5000      : Adsorption enthalpy (Qst) : -45.23 kJ/mol 
+5000      : Henry coefficient (KH)    : 0.41603 mol/kg/Pa
+6000      : Adsorption enthalpy (Qst) : -45.24 kJ/mol 
+6000      : Henry coefficient (KH)    : 0.41847 mol/kg/Pa
+7000      : Adsorption enthalpy (Qst) : -45.32 kJ/mol 
+7000      : Henry coefficient (KH)    : 0.43011 mol/kg/Pa
+8000      : Adsorption enthalpy (Qst) : -45.29 kJ/mol 
+8000      : Henry coefficient (KH)    : 0.41763 mol/kg/Pa
+9000      : Adsorption enthalpy (Qst) : -45.38 kJ/mol 
+9000      : Henry coefficient (KH)    : 0.44179 mol/kg/Pa
+FINAL: Adsorption enthalpy (Qst) : -45.59 kJ/mol 
+FINAL: Henry coefficient (KH)    : 0.45982 mol/kg/Pa

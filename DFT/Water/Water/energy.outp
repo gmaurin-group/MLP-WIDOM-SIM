@@ -1,0 +1,737 @@
+ DBCSR| CPU Multiplication driver                                           XSMM (U)
+ DBCSR| Multrec recursion limit                                              512 (U)
+ DBCSR| Multiplication stack size                                           1000 (D)
+ DBCSR| Maximum elements for images                                    UNLIMITED (U)
+ DBCSR| Multiplicative factor virtual images                                   1 (U)
+ DBCSR| Use multiplication densification                                       T (D)
+ DBCSR| Multiplication size stacks                                             3 (U)
+ DBCSR| Use memory pool for CPU allocation                                     F (U)
+ DBCSR| Number of 3D layers                                               SINGLE (U)
+ DBCSR| Use MPI memory allocation                                              F (U)
+ DBCSR| Use RMA algorithm                                                      F (U)
+ DBCSR| Use Communication thread                                               T (U)
+ DBCSR| Communication thread load                                             87 (D)
+ DBCSR| MPI: My process id                                                     0
+ DBCSR| MPI: Number of processes                                             192
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00 (U)
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2025-07-21 11:10:39.984
+ ***** ** ***  *** **   PROGRAM STARTED ON                              nid00018
+ **    ****   ******    PROGRAM STARTED BY                             x_satyanb
+ ***** **    ** ** **   PROGRAM PROCESS ID                                138494
+  **** **  *******  **  PROGRAM STARTED IN /scratch/x_satyanb/CCDC_NEW_2071_MOFs
+                                           _ODAC_OPT/DFT_CALCULATIONS_with_CP2K_
+                                           90MOFs/WATER_CALCULATIONS/MORE_CUTOFF
+                                           /ENERGY_MOF_WT/WATER/widom_qmof-a9be6
+                                           73_mepoml-geo_opt_odac_H2O-PBE_e_min-
+                                           opt_0005
+
+ CP2K| version string:                                       CP2K version 2023.2
+ CP2K| source code revision number:                                  git:65cca6c
+ CP2K| cp2kflags: omp libint fftw3 libxc pexsi elpa parallel scalapack cosma qui
+ CP2K|            p xsmm plumed2 spglib sirius libvori libbqb libvdwxc
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                       Mon 02 Sep 2024 11:42:40 PM +03
+ CP2K| Program compiled on                                                   ln2
+ CP2K| Program compiled for                                                local
+ CP2K| Data directory path    /sw/ex111genoa/cp2k/2023.2/gcc13.2/cp2k-2023.2/dat
+ CP2K| Input file name                                                ENERGY.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                        BASIS_MOLOPT
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name           widom_qmof-a9be673_mepoml-geo_opt_odac_H
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                   widom_qmof-a9be673_mepoml-geo_opt_odac_H
+ GLOBAL| Run type                                                         ENERGY
+ GLOBAL| FFT library                                                       FFTW3
+ GLOBAL| Diagonalization library                                            ELPA
+ GLOBAL| DGEMM library                                                      BLAS
+ GLOBAL| Minimum number of eigenvectors for ELPA usage                        16
+ GLOBAL| Orthonormality check for eigenvectors                          DISABLED
+ GLOBAL| Matrix multiplication library                                     COSMA
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Grid backend                                                       AUTO
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                           192
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| Stack size for threads created by OpenMP (OMP_STACKSIZE)        default
+ GLOBAL| CPU model name                          AMD EPYC 9654 96-Core Processor
+ GLOBAL| CPUID                                                              1003
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            394628636     394628636     394628636     394628636
+ MEMORY| MemFree             349046556     349046556     349046556     349046556
+ MEMORY| Buffers                     0             0             0             0
+ MEMORY| Cached                1044088       1044088       1044088       1044088
+ MEMORY| Slab                 17704572      17704572      17704572      17704572
+ MEMORY| SReclaimable           260456        260456        260456        260456
+ MEMORY| MemLikelyFree       350351100     350351100     350351100     350351100
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000-2023)             **
+ **                      J. Chem. Phys. 152, 194103 (2020)                    **
+ **                                                                           **
+ *******************************************************************************
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   3
+                             - Atoms:                                          3
+                             - Shell sets:                                     3
+                             - Shells:                                        11
+                             - Primitive Cartesian functions:                 15
+                             - Cartesian basis functions:                     24
+                             - Spherical basis functions:                     23
+
+  Maximum angular momentum of- Orbital basis functions:                        2
+                             - Local part of the GTH pseudopotential:          2
+                             - Non-local part of the GTH pseudopotential:      0
+
+
+ SCF PARAMETERS         Density guess:                                   RESTART
+                        --------------------------------------------------------
+                        max_scf:                                             500
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                             0.000000
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         1.00E-06
+                        max_scf                                              500
+                        No outer loop optimization
+                        step_size                                       5.00E-01
+
+ Number of electrons:                                                          8
+ Number of occupied orbitals:                                                  4
+ Number of molecular orbitals:                                                 4
+
+ Number of orbital functions:                                                 23
+ Number of independent orbital functions:                                     23
+
+ Extrapolation method: initial_guess
+
+ *** WARNING in qs_initial_guess.F:305 :: User requested to restart the     ***
+ *** wavefunction from the file named:                                      ***
+ *** widom_qmof-a9be673_mepoml-geo_opt_odac_H2O-PBE_e_min-opt_0005-RESTART. ***
+ *** fn. This file does not exist. Please check the existence of the file   ***
+ *** or change properly the value of the keyword WFN_RESTART_FILE_NAME.     ***
+ *** Calculation continues using ATOMIC GUESS.                              ***
+
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                                         using   7 DIIS vectors
+                                         safer DIIS on
+  Preconditioner : FULL_KINETIC        : inversion of T + eS
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000                  energy_gap     :    0.00100000
+  eps_taylor     :   0.10000E-15                  max_taylor     :             4
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.1     0.13491454       -16.7805940313 -1.68E+01
+     2 OT DIIS     0.15E+00    0.1     0.08523592       -16.9784024154 -1.98E-01
+     3 OT DIIS     0.15E+00    0.1     0.05135713       -17.1035944731 -1.25E-01
+     4 OT DIIS     0.15E+00    0.1     0.03564094       -17.1601272931 -5.65E-02
+     5 OT DIIS     0.15E+00    0.1     0.01998403       -17.2038743861 -4.37E-02
+     6 OT DIIS     0.15E+00    0.1     0.01031617       -17.2198578138 -1.60E-02
+     7 OT DIIS     0.15E+00    0.1     0.00614154       -17.2230435428 -3.19E-03
+     8 OT DIIS     0.15E+00    0.1     0.00407009       -17.2243353488 -1.29E-03
+     9 OT DIIS     0.15E+00    0.1     0.00273161       -17.2249488971 -6.14E-04
+    10 OT DIIS     0.15E+00    0.1     0.00140584       -17.2253376180 -3.89E-04
+    11 OT DIIS     0.15E+00    0.1     0.00071965       -17.2254267657 -8.91E-05
+    12 OT DIIS     0.15E+00    0.1     0.00044204       -17.2254438940 -1.71E-05
+    13 OT DIIS     0.15E+00    0.1     0.00022204       -17.2254507482 -6.85E-06
+    14 OT DIIS     0.15E+00    0.1     0.00011316       -17.2254524136 -1.67E-06
+    15 OT DIIS     0.15E+00    0.1     0.00006201       -17.2254528032 -3.90E-07
+    16 OT DIIS     0.15E+00    0.1     0.00003500       -17.2254529107 -1.07E-07
+    17 OT DIIS     0.15E+00    0.1     0.00002219       -17.2254529412 -3.05E-08
+    18 OT DIIS     0.15E+00    0.1     0.00001554       -17.2254529520 -1.09E-08
+    19 OT DIIS     0.15E+00    0.1     0.00001118       -17.2254529578 -5.77E-09
+    20 OT DIIS     0.15E+00    0.1     0.00000867       -17.2254529609 -3.11E-09
+    21 OT DIIS     0.15E+00    0.1     0.00000592       -17.2254529637 -2.83E-09
+    22 OT DIIS     0.15E+00    0.1     0.00000383       -17.2254529653 -1.53E-09
+    23 OT DIIS     0.15E+00    0.1     0.00000250       -17.2254529658 -5.76E-10
+    24 OT DIIS     0.15E+00    0.1     0.00000152       -17.2254529661 -2.47E-10
+    25 OT DIIS     0.15E+00    0.1     0.00000095       -17.2254529662 -7.66E-11
+
+  *** SCF run converged in    25 steps ***
+
+
+  Electronic density on regular grids:         -7.9999999999        0.0000000001
+  Core density on regular grids:                8.0000000000       -0.0000000000
+  Total charge density on r-space grids:        0.0000000000
+  Total charge density g-space grids:           0.0000000000
+
+  Overlap energy of the core charge distribution:               0.00000004440538
+  Self energy of the core charge distribution:                -44.34715499673765
+  Core Hamiltonian energy:                                     12.87997810193052
+  Hartree energy:                                              18.46852941038925
+  Exchange-correlation energy:                                 -4.22145338723202
+  Dispersion energy:                                           -0.00535213892000
+
+  Total energy:                                               -17.22545296616453
+
+  outer SCF iter =    1 RMS gradient =   0.95E-06 energy =        -17.2254529662
+  outer SCF loop converged in   1 iterations or   25 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [a.u.]:              -17.225452966164525
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                DBCSR STATISTICS                             -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ COUNTER                                    TOTAL       BLAS       SMM       ACC
+ flops     5 x    13 x     4                13520       0.0%    100.0%      0.0%
+ flops    13 x     5 x     4                13520       0.0%    100.0%      0.0%
+ flops     5 x     5 x     4                15600       0.0%    100.0%      0.0%
+ flops     5 x     4 x     4                19840       0.0%    100.0%      0.0%
+ flops     4 x     4 x     4                28032       0.0%    100.0%      0.0%
+ flops     4 x     4 x     5                31680       0.0%    100.0%      0.0%
+ flops    13 x    13 x     4                35152       0.0%    100.0%      0.0%
+ flops    18 x     4 x     5                37440       0.0%    100.0%      0.0%
+ flops     4 x     4 x    13                41184       0.0%    100.0%      0.0%
+ flops    18 x     4 x    13                48672       0.0%    100.0%      0.0%
+ flops     5 x     4 x     5                53600       0.0%    100.0%      0.0%
+ flops    13 x     4 x     5                56160       0.0%    100.0%      0.0%
+ flops     5 x     4 x    13                69680       0.0%    100.0%      0.0%
+ flops    18 x     4 x     4                71424       0.0%    100.0%      0.0%
+ flops    13 x     4 x    13                73008       0.0%    100.0%      0.0%
+ flops inhomo. stacks                           0       0.0%      0.0%      0.0%
+ flops total                       608.512000E+03       0.0%    100.0%      0.0%
+ flops max/rank                    472.432000E+03       0.0%    100.0%      0.0%
+ matmuls inhomo. stacks                         0       0.0%      0.0%      0.0%
+ matmuls total                               1562       0.0%    100.0%      0.0%
+ number of processed stacks                  1562       0.0%    100.0%      0.0%
+ average stack size                                     0.0       1.0       0.0
+ marketing flops                   641.488375E+03
+ -------------------------------------------------------------------------------
+ # multiplications                            549
+ max memory usage/rank             245.817344E+06
+ # max total images/rank                        3
+ # max 3D layers                                1
+ # MPI messages exchanged                 4637952
+ MPI messages size (bytes):
+  total size                        14.010176E+06
+  min size                           0.000000E+00
+  max size                           1.872000E+03
+  average size                       3.020768E+00
+ MPI breakdown and total messages size (bytes):
+             size <=      128             4608876                   952064
+       128 < size <=     8192               29076                 13058112
+      8192 < size <=    32768                   0                        0
+     32768 < size <=   131072                   0                        0
+    131072 < size <=  4194304                   0                        0
+   4194304 < size <= 16777216                   0                        0
+  16777216 < size                               0                        0
+ -------------------------------------------------------------------------------
+
+ *** WARNING in dbcsr_mm.F:291 :: Using a non-square number of MPI ranks ***
+ *** might lead to poor performance. Used ranks: 192 Suggested: 196 400  ***
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                      DBCSR MESSAGE PASSING PERFORMANCE                      -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Bcast               16                     12.
+ MP_Allreduce         2990                      8.
+ MP_Alltoall          1931                  42962.
+ MP_ISend            50754                     74.
+ MP_IRecv            50612                     65.
+ -------------------------------------------------------------------------------
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                DBM STATISTICS                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+    M  x    N  x    K                                          COUNT     PERCENT
+ -------------------------------------------------------------------------------
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                GRID STATISTICS                              -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ LP    KERNEL             BACKEND                              COUNT     PERCENT
+ 2     collocate general  CPU                                   4160      27.91%
+ 2     integrate general  CPU                                   4000      26.83%
+ 3     collocate general  CPU                                   2236      15.00%
+ 3     integrate general  CPU                                   2150      14.42%
+ 4     collocate general  CPU                                    910       6.10%
+ 4     integrate general  CPU                                    875       5.87%
+ 0     collocate general  CPU                                    576       3.86%
+ -------------------------------------------------------------------------------
+
+ MEMORY| Estimated peak process memory [MiB]                                 235
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                         MESSAGE PASSING PERFORMANCE                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Group                4
+ MP_Bcast              396                1158598.
+ MP_Allreduce         1132                    933.
+ MP_Sync               335
+ MP_Alltoall           775               53062186.
+ MP_SendRecv         14898                   9824.
+ MP_ISendRecv        14325                   9824.
+ MP_Wait             16651
+ MP_comm_split          25
+ MP_ISend             4935                  37694.
+ MP_IRecv             5023                  37050.
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                           R E F E R E N C E S                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ 
+ CP2K version 2023.2, the CP2K developers group (2023).
+ CP2K is freely available from https://www.cp2k.org/ .
+
+ Kuehne,Thomas D.; Iannuzzi,Marcella; Del Ben,Mauro;
+ Rybkin,Vladimir V.; Seewald,Patrick; Stein,Frederick; Laino,Teodoro;
+ Khaliullin,Rustam Z.; Schuett,Ole; Schiffmann,Florian; Golze,Dorothea;
+ Wilhelm,Jan; Chulkov,Sergey; Bani-Hashemian,Mohammad Hossein;
+ Weber,Valery; Borstnik,Urban; Taillefumier,Mathieu;
+ Jakobovits,Alice Shoshana; Lazzaro,Alfio; Pabst,Hans; Mueller,Tiziano;
+ Schade,Robert; Guidon,Manuel; Andermatt,Samuel; Holmberg,Nico;
+ Schenter,Gregory K.; Hehn,Anna; Bussy,Augustin; Belleflamme,Fabian;
+ Tabacchi,Gloria; Gloess,Andreas; Lass,Michael; Bethune,Iain;
+ Mundy,Christopher J.; Plessl,Christian; Watkins,Matt;
+ VandeVondele,Joost; Krack,Matthias; Hutter,Juerg. 
+ The Journal of Chemical Physics, 152 (19), (2020). 
+ CP2K: An electronic structure and molecular dynamics software package -
+ Quickstep: Efficient and accurate electronic structure calculations.
+ https://doi.org/10.1063/5.0007045
+
+ Goerigk, Lars; Hansen, Andreas; Bauer, Christoph; Ehrlich, Stephan;
+ Najibi, Asim; Grimme, Stefan. , 19 (48), (2017). 
+ A look at the density functional theory zoo with the advanced GMTKN55 database
+ for general main group thermochemistry, kinetics and noncovalent interactions.
+ https://doi.org/10.1039/C7CP04913G
+
+ Schuett, Ole; Messmer, Peter; Hutter, Juerg; VandeVondele, Joost. 
+ Electronic Structure Calculations on Graphics Processing Units, John
+ Wiley & Sons, Ltd, 173-190 (2016). 
+ GPU-Accelerated Sparse Matrix-Matrix Multiplication for
+ Linear Scaling Density Functional Theory.
+ https://doi.org/10.1002/9781118670712.ch8
+
+ Heinecke, A; Henry, G; Hutchinson, M; Pabst, H. 
+ Proceedings of Intl. Supercomputing Conference, 981-991 (2016). 
+ LIBXSMM: Accelerating Small Matrix Multiplications
+ by Runtime Code Generation.
+ https://doi.org/10.1109/SC.2016.83
+
+ Borstnik, U; VandeVondele, J; Weber, V; Hutter, J. 
+ PARALLEL COMPUTING, 40 (5-6), 47-58 (2014). 
+ Sparse matrix multiplication: The distributed block-compressed sparse
+ row library.
+ https://doi.org/10.1016/j.parco.2014.03.012
+
+ Hutter, J; Iannuzzi, M; Schiffmann, F; VandeVondele, J. 
+ WIREs Comput Mol Sci., 4 (1), 15-25 (2014). 
+ CP2K: atomistic simulations of condensed matter systems.
+ https://doi.org/10.1002/wcms.1159
+
+ Marek, A; Blum, V; Johanni, R; Havu, V; Lang, B; Auckenthaler, T;
+ Heinecke, A; Bungartz, H; Lederer, H. 
+ Journal of Physics: Condensed Matter, 26 (21), (2014). 
+ The ELPA library: scalable parallel eigenvalue solutions for
+ electronic structure
+ theory and computational science.
+ https://doi.org/10.1088/0953-8984/26/21/213201
+
+ Grimme, S; Ehrlich, S; Goerigk, L. 
+ JOURNAL OF COMPUTATIONAL CHEMISTRY, 32, 1456 (2011). 
+ Effect of the damping function in dispersion corrected density functional theory.
+ https://doi.org/10.1002/jcc.21759
+
+ Grimme, S; Antony, J; Ehrlich, S; Krieg, H. 
+ JOURNAL OF CHEMICAL PHYSICS, 132 (15), 154104 (2010). 
+ A consistent and accurate ab initio parametrization of density
+ functional dispersion correction (DFT-D) for the 94 elements H-Pu.
+ https://doi.org/10.1063/1.3382344
+
+ VandeVondele, J; Hutter, J. 
+ JOURNAL OF CHEMICAL PHYSICS, 127 (11), 114105 (2007). 
+ Gaussian basis sets for accurate calculations on molecular systems in
+ gas and condensed phases.
+ https://doi.org/10.1063/1.2770708
+
+ Krack, M. 
+ THEORETICAL CHEMISTRY ACCOUNTS, 114 (1-3), 145-152 (2005). 
+ Pseudopotentials for H to Kr optimized for gradient-corrected
+ exchange-correlation functionals.
+ https://doi.org/10.1007/s00214-005-0655-y
+
+ VandeVondele, J; Krack, M; Mohamed, F; Parrinello, M; Chassaing, T;
+ Hutter, J. COMPUTER PHYSICS COMMUNICATIONS, 167 (2), 103-128 (2005). 
+ QUICKSTEP: Fast and accurate density functional calculations using a
+ mixed Gaussian and plane waves approach.
+ https://doi.org/10.1016/j.cpc.2004.12.014
+
+ Frigo, M; Johnson, SG. 
+ PROCEEDINGS OF THE IEEE, 93 (2), 216-231 (2005). 
+ The design and implementation of FFTW3.
+ https://doi.org/10.1109/JPROC.2004.840301
+
+ VandeVondele, J; Hutter, J. 
+ JOURNAL OF CHEMICAL PHYSICS, 118 (10), 4365-4369 (2003). 
+ An efficient orbital transformation method for electronic structure
+ calculations.
+ https://doi.org/10.1063/1.1543154
+
+ Hartwigsen, C; Goedecker, S; Hutter, J. 
+ PHYSICAL REVIEW B, 58 (7), 3641-3662 (1998). 
+ Relativistic separable dual-space Gaussian pseudopotentials from H to Rn.
+ https://doi.org/10.1103/PhysRevB.58.3641
+
+ Lippert, G; Hutter, J; Parrinello, M. 
+ MOLECULAR PHYSICS, 92 (3), 477-487 (1997). 
+ A hybrid Gaussian and plane wave density functional scheme.
+ https://doi.org/10.1080/002689797170220
+
+ Perdew, JP; Burke, K; Ernzerhof, M. 
+ PHYSICAL REVIEW LETTERS, 77 (18), 3865-3868 (1996). 
+ Generalized gradient approximation made simple.
+ https://doi.org/10.1103/PhysRevLett.77.3865
+
+ Goedecker, S; Teter, M; Hutter, J. 
+ PHYSICAL REVIEW B, 54 (3), 1703-1710 (1996). 
+ Separable dual-space Gaussian pseudopotentials.
+ https://doi.org/10.1103/PhysRevB.54.1703
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                T I M I N G                                  -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
+                                MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
+ CP2K                                 1  1.0    0.235    0.238    3.319    3.319
+ qs_energies                          1  2.0    0.001    0.002    2.637    2.637
+ scf_env_do_scf                       1  3.0    0.000    0.000    2.332    2.332
+ scf_env_do_scf_inner_loop           25  4.0    0.001    0.001    2.226    2.227
+ qs_ks_update_qs_env                 26  5.0    0.000    0.000    0.923    0.925
+ rebuild_ks_matrix                   25  6.0    0.000    0.000    0.922    0.924
+ qs_ks_build_kohn_sham_matrix        25  7.0    0.020    0.021    0.922    0.924
+ rs_pw_transfer                     205  9.5    0.001    0.002    0.750    0.786
+ qs_rho_update_rho_low               26  5.0    0.000    0.000    0.758    0.759
+ calculate_rho_elec                  26  6.0    0.002    0.002    0.758    0.759
+ dbcsr_multiply_generic             549 10.1    0.010    0.011    0.724    0.737
+ qs_scf_new_mos                      25  5.0    0.000    0.000    0.657    0.659
+ qs_scf_loop_do_ot                   25  6.0    0.000    0.000    0.657    0.659
+ ot_scf_mini                         25  7.0    0.000    0.000    0.628    0.630
+ density_rs2pw                       26  7.0    0.001    0.001    0.535    0.571
+ sum_up_and_integrate                25  8.0    0.001    0.001    0.445    0.553
+ integrate_v_rspace                  25  9.0    0.000    0.001    0.444    0.552
+ pw_transfer                        481 10.1    0.151    0.171    0.497    0.533
+ potential_pw2rs                     25 10.0    0.001    0.001    0.438    0.440
+ multiply_cannon                    549 11.1    0.224    0.250    0.391    0.427
+ fft_wrap_pw1pw2                    431 11.3    0.001    0.001    0.345    0.406
+ ot_mini                             25  8.0    0.000    0.000    0.400    0.403
+ qs_ot_get_derivative                25  9.0    0.002    0.002    0.364    0.367
+ fft_wrap_pw1pw2_230                278 12.7    0.013    0.015    0.264    0.313
+ grid_collocate_task_list            26  7.0    0.218    0.294    0.218    0.294
+ qs_ot_get_derivative_diag           24 10.0    0.000    0.000    0.277    0.279
+ fft3d_pb                           278 13.7    0.050    0.060    0.219    0.270
+ qs_vxc_create                       25  8.0    0.000    0.001    0.261    0.262
+ xc_vxc_pw_create                    25  9.0    0.003    0.004    0.261    0.262
+ mp_sum_l                          3065  9.9    0.169    0.249    0.169    0.249
+ xc_pw_derive                       150 11.0    0.000    0.000    0.185    0.222
+ init_scf_run                         1  3.0    0.000    0.000    0.215    0.216
+ scf_env_initial_rho_setup            1  4.0    0.000    0.000    0.215    0.215
+ mp_alltoall_z22v                   709 15.4    0.146    0.207    0.146    0.207
+ rs_pw_transfer_RS2PW_230            27  8.9    0.067    0.079    0.169    0.204
+ rs_pw_transfer_RS2PW_80             26  9.0    0.088    0.166    0.181    0.194
+ mp_waitall_1                     94051 14.0    0.154    0.176    0.154    0.176
+ mp_waitany                        2088 11.4    0.136    0.173    0.136    0.173
+ qs_init_subsys                       1  2.0    0.035    0.035    0.172    0.172
+ qs_ot_get_p                         26  7.9    0.000    0.000    0.165    0.170
+ calculate_first_density_matrix       1  5.0    0.015    0.015    0.166    0.166
+ xc_pw_divergence                    25 10.0    0.000    0.000    0.127    0.163
+ rs_pw_transfer_PW2RS_230            25 12.0    0.054    0.064    0.154    0.160
+ rs_pw_transfer_PW2RS_80             25 12.0    0.036    0.040    0.135    0.154
+ xc_rho_set_and_dset_create          25 10.0    0.004    0.005    0.129    0.150
+ multiply_cannon_loop               549 12.1    0.026    0.029    0.134    0.148
+ mp_sendrecv_dv                   14898 10.0    0.128    0.143    0.128    0.143
+ parser_read_line                  6886  4.1    0.001    0.002    0.136    0.140
+ parser_read_line_low                22  6.5    0.012    0.038    0.135    0.139
+ make_m2s                          1098 11.1    0.008    0.008    0.134    0.138
+ topology_control                     1  2.0    0.041    0.041    0.137    0.137
+ broadcast_input_information         22  7.5    0.022    0.025    0.123    0.131
+ calculate_atomic_block_dm            1  6.0    0.047    0.047    0.124    0.125
+ create_qs_kind_set                   1  2.0    0.000    0.000    0.123    0.124
+ read_qs_kind                         3  3.0    0.027    0.074    0.123    0.124
+ mp_alltoall_d11v                   438 12.1    0.004    0.113    0.004    0.113
+ grid_integrate_task_list            25 10.0    0.003    0.112    0.003    0.112
+ rs_gather_matrices                  25 10.0    0.000    0.000    0.003    0.111
+ qs_ot_p2m_diag                      25  9.0    0.000    0.001    0.108    0.110
+ mp_bcast_i_src                      90  8.4    0.094    0.107    0.094    0.107
+ mp_isendrecv_dv                  14325 13.0    0.019    0.107    0.019    0.107
+ make_images                       1098 12.1    0.017    0.024    0.104    0.107
+ init_scf_loop                        1  4.0    0.010    0.011    0.104    0.105
+ cube_transpose_2                   205 13.8    0.006    0.008    0.047    0.086
+ qs_energies_init_hamiltonians        1  3.0    0.007    0.011    0.085    0.085
+ fft3d_ps                           153 12.5    0.004    0.006    0.068    0.085
+ cube_transpose_4                   127 14.9    0.017    0.025    0.060    0.079
+ -------------------------------------------------------------------------------
+
+ The number of warnings for this run is : 2
+ 
+ -------------------------------------------------------------------------------
+  **** **** ******  **  PROGRAM ENDED AT                 2025-07-21 11:10:44.535
+ ***** ** ***  *** **   PROGRAM RAN ON                                  nid00018
+ **    ****   ******    PROGRAM RAN BY                                 x_satyanb
+ ***** **    ** ** **   PROGRAM PROCESS ID                                138494
+  **** **  *******  **  PROGRAM STOPPED IN /scratch/x_satyanb/CCDC_NEW_2071_MOFs
+                                           _ODAC_OPT/DFT_CALCULATIONS_with_CP2K_
+                                           90MOFs/WATER_CALCULATIONS/MORE_CUTOFF
+                                           /ENERGY_MOF_WT/WATER/widom_qmof-a9be6
+                                           73_mepoml-geo_opt_odac_H2O-PBE_e_min-
+                                           opt_0005
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
+[CRAYBLAS_WARNING] Application linked against multiple cray-libsci libraries
