@@ -1,0 +1,36 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  'WOJJOV_NVT                            '
+_cell_length_a                         15.000000
+_cell_length_b                         15.000000
+_cell_length_c                         15.000000
+_cell_angle_alpha                      90.000000
+_cell_angle_beta                       90.000000
+_cell_angle_gamma                      90.000000
+_cell_volume                           3375.000000
+_space_group_name_H-M_alt              'P 1'
+_space_group_IT_number                 1
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   C1         1.0     0.483491     0.478515     0.515656    Uiso  ? C
+   C2         1.0     0.480481     0.527688     0.441637    Uiso  ? C
+   H1         1.0     0.545763     0.449930     0.540228    Uiso  ? H
+   H2         1.0     0.423797     0.464666     0.554958    Uiso  ? H
+   H3         1.0     0.540179     0.541539     0.402335    Uiso  ? H
+   H4         1.0     0.418209     0.556273     0.417066    Uiso  ? H
